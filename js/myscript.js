@@ -116,7 +116,7 @@ $( document ).ready(function() {
   const colors = ["red", "green", "blue"];
 
 
-  // CREO UNA MAPPA DEL MIO ARRAY DI OGGETTI
+
   icons.forEach(
     // PRENDO IL SINGOLO OGGETTO
     (object)  => {
@@ -131,7 +131,7 @@ $( document ).ready(function() {
       // STAMPO IL SINGOLO OGGETTO
       $(".container").append(
         `
-        <div>
+        <div class="icon">
          <i class="${object.family} ${object.prefix}${object.name}" style=color:${object.color}></i>
          <h2> ${object.name} </h2>
         </div>
@@ -139,4 +139,17 @@ $( document ).ready(function() {
       )
     }
   );
+
+  // $("select").change(
+  //   function () {
+  //     console.log($(this).val());
+  //     if () {
+  //       $(".icon").addClass(".active")
+  //     }
+  //   }
+  // )
 });
+
+
+
+// MY FUNCTION----------------------------------
