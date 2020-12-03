@@ -111,17 +111,22 @@ $( document ).ready(function() {
       family: "fas"
     },
   ];
+  console.log(icons);
   // CREO ARRAY DI COLORI
   const colors = ["red", "green", "blue"];
 
 
   // CREO UNA MAPPA DEL MIO ARRAY DI OGGETTI
-  const newIcons = icons.map(
+  icons.forEach(
     // PRENDO IL SINGOLO OGGETTO
     (object)  => {
+      // DEFINISCO LE CONDIZIONI PER I COLORI
       if (object.type == "animal") {
-
-
+        object.color = "red";
+      } else if (object.type == "vegetable") {
+        object.color = "green";
+      } else {
+        object.color = "blue";
       }
     }
   );
@@ -134,7 +139,7 @@ $( document ).ready(function() {
       $(".container").append(
         `
         <div>
-         <i class="${object.family} ${object.prefix}${object.name}"></i>
+         <i class="${object.family} ${object.prefix}${object.name}" style=color:${object.color}></i>
          <h2> ${object.name} </h2>
         </div>
         `
