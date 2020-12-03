@@ -111,6 +111,7 @@ $( document ).ready(function() {
     },
   ];
 
+
   // CICLO NEL MIO ARRAY DI OGGETTI
   icons.forEach(
     // PRENDO IL SINGOLO OGGETTO AD OGNI ITERAZIONE
@@ -120,7 +121,7 @@ $( document ).ready(function() {
       $(".container").append(
         `
         <div>
-         <i class="${icons.family} ${icons.prefix} ${icons.name}"></i>
+         <i class="${icons.family}${icons.prefix}${icons.name}"></i>
          <h2> ${icons.name} </h2>
         </div>
         `
