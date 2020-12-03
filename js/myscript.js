@@ -1,6 +1,6 @@
-// milestone 2:
-// definire un array di colori e associare ad ogni tipo di icona un colore.
-// Visualizzare le icone di colore diverso in base al tipo.
+// milestone 3:
+// aggiungere una select per filtrare le icone in base al tipo.
+// Popolare le options della select dinamicamente e, ogni volta che cambia il valore selezionato, visualizzare le icone corrispondenti.
 
 
 
@@ -128,13 +128,6 @@ $( document ).ready(function() {
       } else {
         object.color = colors[2];
       }
-    }
-  );
-
-  // CICLO NEL MIO ARRAY DI OGGETTI
-  icons.forEach(
-    // PRENDO IL SINGOLO OGGETTO AD OGNI ITERAZIONE
-    (object) => {
       // STAMPO IL SINGOLO OGGETTO
       $(".container").append(
         `
@@ -144,5 +137,6 @@ $( document ).ready(function() {
         </div>
         `
       )
-  });
+    }
+  );
 });
