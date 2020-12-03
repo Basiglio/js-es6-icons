@@ -22,12 +22,16 @@ header {
 }
 
 .container > div {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border: 1px solid black;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+i {
+  font-size: 50px;
 }
