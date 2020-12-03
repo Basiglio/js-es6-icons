@@ -1,4 +1,6 @@
-
+// milestone 2:
+// definire un array di colori e associare ad ogni tipo di icona un colore.
+// Visualizzare le icone di colore diverso in base al tipo.
 
 
 
@@ -9,6 +11,8 @@
 
 $( document ).ready(function() {
 
+
+  // CREO ARRAY DI OGGETTI ICONE
   const icons = [
    {
      name: "dog",
@@ -107,13 +111,25 @@ $( document ).ready(function() {
       family: "fas"
     },
   ];
+  // CREO ARRAY DI COLORI
+  const colors = ["red", "green", "blue"];
 
+
+  // CREO UNA MAPPA DEL MIO ARRAY DI OGGETTI
+  const newIcons = icons.map(
+    // PRENDO IL SINGOLO OGGETTO
+    (object)  => {
+      if (object.type == "animal") {
+
+
+      }
+    }
+  );
 
   // CICLO NEL MIO ARRAY DI OGGETTI
   icons.forEach(
     // PRENDO IL SINGOLO OGGETTO AD OGNI ITERAZIONE
     (object) => {
-      console.log(object);
       // STAMPO IL SINGOLO OGGETTO
       $(".container").append(
         `
