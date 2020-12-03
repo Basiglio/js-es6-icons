@@ -122,11 +122,11 @@ $( document ).ready(function() {
     (object)  => {
       // DEFINISCO LE CONDIZIONI PER I COLORI
       if (object.type == "animal") {
-        object.color = "red";
+        object.color = colors[0];
       } else if (object.type == "vegetable") {
-        object.color = "green";
+        object.color = colors[1];
       } else {
-        object.color = "blue";
+        object.color = colors[2];
       }
     }
   );
