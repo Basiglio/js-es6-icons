@@ -26,4 +26,8 @@ header {
   height: 250px;
   border: 1px solid black;
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

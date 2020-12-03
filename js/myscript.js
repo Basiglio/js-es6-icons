@@ -121,8 +121,8 @@ $( document ).ready(function() {
       $(".container").append(
         `
         <div>
-         <i class="${icons.family}${icons.prefix}${icons.name}"></i>
-         <h2> ${icons.name} </h2>
+         <i class="${object.family} ${object.prefix}${object.name}"></i>
+         <h2> ${object.name} </h2>
         </div>
         `
       )
